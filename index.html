@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./assets/style.css">
     <script src="https://kit.fontawesome.com/710bd18d88.js" crossorigin="anonymous"></script>
     <title>My Weather App</title>
@@ -12,18 +12,30 @@
 <h1>My Weather App</h1>
 <body>
     <div class="container">
-        <div class="app-title" id="dashboard"><p>Weather Dashboard</p></div>
+        <div class="app-title" id="dashboard"><p>Weather Dashboard</p></div><br>
+        <div class="row">Search for a City:
+        <div class="search-form" form id="search">
+    <input type="text" id="city-input">
+    </div>
+    </div>
+    <div class="row">Atlanta</div>
+    <div class="row">Boston</div>
+    <div class="row">Denver</div>
+        </div>
         <div class="notification"></div>
+        <div class="col">
         <div class="weather-container">
             <div class="location" id="weather-box"><p>-</p></div>
             <div class="weather-icon" id="weather-box"><img src="icons/unknown.png"></div>
-            <div class="temperature-value" id="weather-box"><p>-  °<span>C</span></p></div>
-                <div class="humidity-value" id="weather-box"><p>-</p></div>
-                <div class="wind-speed" id="weather-box"><p>-</p></div>
+            <div class="temperature-value" id="weather-box"><p>-  °<span>F</span></p></div><br>
+                <div class="humidity-value" id="weather-box"><p>-</p></div><br>
+                <div class="wind-speed" id="weather-box"><p>-</p></div><br>
                 <div class="uv-index" id="weather-box"><p>-</p></div>
+                </div>
 
     </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
