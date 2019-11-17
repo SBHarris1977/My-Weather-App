@@ -1,41 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./assets/style.css">
     <script src="https://kit.fontawesome.com/710bd18d88.js" crossorigin="anonymous"></script>
     <title>My Weather App</title>
 </head>
 <h1>My Weather App</h1>
+
 <body>
     <div class="container">
-        <div class="app-title" id="dashboard"><p>Weather Dashboard</p></div><br>
-        <div class="row">Search for a City:
-        <div class="search-form" form id="search">
-    <input type="text" id="city-input">
-    </div>
-    </div>
-    <div class="row">Atlanta</div>
-    <div class="row">Boston</div>
-    <div class="row">Denver</div>
+        <div class="app-title" id="dashboard">
+            <p>Weather Dashboard</p><br>
         </div>
-        <div class="notification"></div>
-        <div class="col">
-        <div class="weather-container">
-            <div class="location" id="weather-box"><p>-</p></div>
-            <div class="weather-icon" id="weather-box"><img src="icons/unknown.png"></div>
-            <div class="temperature-value" id="weather-box"><p>-  °<span>F</span></p></div><br>
-                <div class="humidity-value" id="weather-box"><p>-</p></div><br>
-                <div class="wind-speed" id="weather-box"><p>-</p></div><br>
-                <div class="uv-index" id="weather-box"><p>-</p></div>
-                </div>
-
+        <p><strong>Select a city to view the current weather!</strong></p>
+      <!--  <div class="row">
+            <form id="city-search">Search for a City</form>
+            <input id="add-city" type="search">
+            <input id="submit" type="submit" value="Search">
+        </div>
     </div>
+    </div>--->
+    <div class="cities"></div>
+    <div class="austin"><link href="Austin" target="_self">Austin</div><br>
+    <div class="atlanta"> <link href ="Atlanta" target="_self">Atlanta</div><br>
+    <div class="boston"> <link href ="Boston" target="_self">Boston</div><br>
+    <div class="denver"> <link href ="Denver" target="_self">Denver</div><br>
+    <div class="los-angeles"> <link href ="Los-Angeles" target="_self">Los Angeles</div>
+
+    <!-- Rendered Buttons will get Dumped Here  -->
+    <div id="city-view"></div>
+    </div>
+    <div class="col">
+        <div class="weather-container">
+            <div class="location" id="weather-box">
+                <p>-</p>
+            </div>
+            <!--<div class="weather-icon" id="weather-box"><img src="icons/unknown.png"></div>-->
+            <div class="temperature-value" id="weather-box">
+                <p>- °<span>F</span></p>
+            </div><br>
+            <div class="humidity-value" id="weather-box">
+                <p>-</p>
+            </div><br>
+            <div class="wind-speed" id="weather-box">
+                <p>-</p>
+            </div><br>
+            <div class="uv-index" id="weather-box">
+                <p>-</p>
+            </div>
+        </div>
+
+        <!--<div class="five-day-container">
+            <h4>5-Day Forecast:</h4>
+            <div class="5day-dt"><br>
+             <div class="temp" id="5day-temp"><p>Temp:</p><br>
+                <div class="humid" id="5day-humid">Humidity:</div>
+            </div>-->
+</div>
+</div>
+        </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
