@@ -8,4 +8,10 @@ But after brainstorming I decided to create links to cities that are already lis
 to be clicked in the order in which they appear to work.
 
 I was happy that I was at least able to pull data from the API because earlier this week I wasn't able to do so.
-This app is a work iin progress.
+This app is a work in progress.
+
+Technologies:
+1. Javascript
+2. CSS
+3. Open Weather Map API
+4. JQuery
