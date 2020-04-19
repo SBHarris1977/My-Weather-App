@@ -12,6 +12,6 @@ This app is a work in progress.
 
 Technologies:
 1. Javascript
-2. CSS
+2. Styled with Bootstrap
 3. Open Weather Map API
 4. JQuery
