@@ -15,3 +15,8 @@ Technologies:
 2. Styled with Bootstrap
 3. Open Weather Map API
 4. JQuery
+
+Just click each city name to view the current weather.
+
+
+![](https://github.com/SBHarris1977/My-Weather-App/blob/master/assets/Weather%20App%20pic.JPG)
